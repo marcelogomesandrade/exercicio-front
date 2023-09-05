@@ -1,11 +1,9 @@
-
-
-
 body{
 
 font-family: Georgia, 'Times New Roman', Times, serif;
 
-background-image: url(../imagens/double-bubble-dark.png);
+background-image: url(../imagens/template.jpg);opacity: calc(85%);
+
 background-attachment: fixed;
 
 
@@ -14,7 +12,7 @@ background-attachment: fixed;
  
  #container {
 
- background-color: lightgrey;
+ background-color: white;
  width: 80%;
  max-width: 800px;
  min-width: 500px;
@@ -22,6 +20,7 @@ background-attachment: fixed;
  box-shadow: blueviolet 00 5px;
  padding: 16px;
  border-radius: 8px;
+ 
 
  }   
 
@@ -29,7 +28,7 @@ h1 {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-    background-color: yellow;
+    background-color: white;
     padding: 10px;
     border: rosybrown solid 2px;
     text-align: center;
@@ -40,23 +39,26 @@ h1 {
 h2{
 
     font-size: 15px;
-    border-bottom: solid 2px;
-    border-left: solid 2px;
-
+    border-bottom: cyan 10px;
+    border-left: cyan 10px;
+    color: white;
+    background-color: black;
     padding-left: 10px;
 
 }
 
-hr {
-    height:10px;
-    background-color: rgb(241, 241, 239);
-}
+
 
 
 h3, p, figcaption {
 
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(5, 5, 5); 
+
 }
+
+
 
 
 h3 {
@@ -66,7 +68,7 @@ h3 {
     background: linear-gradient(45deg,
     rgb(239, 242, 243),
     rgb(193, 193, 231),
-    rgb(207, 207, 118));
+    rgb(118, 207, 194));
 }
 
 .destaque {
@@ -77,32 +79,49 @@ h3 {
     border-radius: 4px;
 }
 
+.texto {
+
+    text-align: justify;
+    color: black;
+}
+
 figure {
 
     margin: 0;
     text-align: center;
+    
+	
+
 
 }
 
 
-img{max-width: 100%;}
+img{
+    
+    max-width: 80%; 
+   
+    
+    }
 
-p a {color: brown;}
+p a {
+	color: rgb(255,255,255);
+      }
 
 ur {padding: 20px;}
 
 
 li {
-
-    list-style-image: url(../imagens/fundo03.gif);
-    line-height: 32px;
+	list-style-image: url(../imagens/fundo03.gif);
+	line-height: 32px;
+	color: rgb(0,0,0);
+	font-weight: bold;
 }
 
 
 li::marker {
 
-    content: "❤️";
-    font-size: 8px;
+    content: "📌";
+    font-size: 16px;
 }
 
 nav{text-align: center;}
@@ -112,7 +131,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background-color: brown;
+    background-color: black;
     width: 50%;
     display: inline-block;
     padding: 10px;
@@ -134,13 +153,23 @@ nav a :first-child {border-top-left-radius: 12px;
 figure img {filter: grayscale();
             transition: 0,5s;
             scale: (0,8);
+            
+   
+   
+            
 }
+
+
+
+
 
 
  figure img:hover {
     
     filter:none; 
-    transform: scale(1);}
+    transform: scale(1);
+    
+}
 
 
 @keyframes caindo {
@@ -151,3 +180,12 @@ figure img {filter: grayscale();
 
 }
 
+.footer__bottom {
+	padding: 12px 0;
+	color: white;
+	border-bottom-color:blue;
+	background-color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	
+}
